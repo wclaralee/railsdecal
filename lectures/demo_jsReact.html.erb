@@ -1,0 +1,50 @@
+class HelloWorld extends React.Component{
+	render(){
+	return <h1>Hello, Rails!</h1>
+}
+}
+
+--> breaks UI into independent and reusable pieces
+
+class Greeting extends React.Component{
+	render(){
+		return (
+			<h1>Hello, {this.props.name}</h1>
+			);
+	}
+}
+
+---> Props: inputs to a react component. lets you customize component. 
+---> react components should be pure, with respect to their props
+---> access with this.props 
+
+this.setState({ state_name: new_state})
+
+})
+
+class Square extends React.Componentconstructor (props){
+	super(props);
+	this.state = {
+		color: props.initialColor
+	};
+
+	}
+})
+
+
+
+render() 
+--> examines this.props and/or this.state to return:
+	> React Elements: representation of a native DOM component 
+
+Rails:
+
+<%= react_component ( 'Component Name', {hash of props } ) %>
+<%= react_component ( 'Greetings', {name: @user.name, is_superior: True})%>
+
+
+
+
+
+
+
